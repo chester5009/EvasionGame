@@ -8,4 +8,7 @@ class MySprite:
         
     def render(self,screen):
         screen.blit(self.bitmap,(self.x,self.y))
+    
+    def update(self):
+        self.x+=0.05
         

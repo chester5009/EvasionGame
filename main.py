@@ -19,6 +19,7 @@ while isRun:
        
     screen.fill((0,255,0))
     heroe.render(screen)
+    heroe.update()
      
     window.blit(screen,(0,0))
     
