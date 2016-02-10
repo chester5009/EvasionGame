@@ -1,5 +1,6 @@
 import pygame
 from Sprite import MySprite
+from heroe import *
 size=(640,480)
 window= pygame.display.set_mode(size)
 pygame.display.set_caption("Evasion")
@@ -10,7 +11,7 @@ isRun=True
 
 
 
-heroe= MySprite(100,100,"assets/spr.png")
+heroe= MySprite(100,100,"assets/enemy.png")
 
 while isRun:
     for e in pygame.event.get():
