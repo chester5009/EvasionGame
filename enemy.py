@@ -4,7 +4,7 @@ class Enemy(MySprite):
     
     speed=0;
     acceleration=0.1
-    maxSpeed=2
+    maxSpeed=0.7
     isLife=True
     
     def update(self):

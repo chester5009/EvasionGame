@@ -65,7 +65,7 @@ while isRun:
                 
             pass
     
-    pygame.time.wait(1000/150)
+    pygame.time.wait(1000/350)
     
     window.blit(screen,(0,0))
     
