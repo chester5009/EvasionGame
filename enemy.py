@@ -14,5 +14,6 @@ class Enemy(MySprite):
         
         if self.x+self.bitmap.get_width()<0:
             self.isLife=False
-            
+        self.boundRect.left=self.x
+        self.boundRect.top=self.y
         pass

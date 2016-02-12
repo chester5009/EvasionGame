@@ -6,8 +6,12 @@ class MySprite:
         self.bitmap=pygame.image.load(filename)
         self.bitmap.set_colorkey((0,0,0))
         self.bitmap=pygame.transform.scale(self.bitmap,(30,30))
+        self.boundRect=pygame.Rect(self.x,self.y,30,30)
         pass
-        
+    
+    def name(self):
+        pass
+    
     def render(self,screen):
         screen.blit(self.bitmap,(self.x,self.y))
         pass

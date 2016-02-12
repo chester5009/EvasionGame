@@ -4,7 +4,10 @@ class Heroe(MySprite):
     
     isMoveUp=False
     isMoveDown=False
-
+    reloadTimer=pygame.time.get_ticks()
+    reloadTime=250
+    nowTime=0
+    isFire=True
     speed=2.5
     def setMove(self,i):
         if i==0:
@@ -29,9 +32,15 @@ class Heroe(MySprite):
             self.y=480-self.bitmap.get_height()
     
     def update(self):
+        self.nowTime=pygame.time.get_ticks()
+        if(self.reloadTimer+self.reloadTime>self.nowTime):
+            self.isFire=False
+        else:
+            self.isFire=True
         self.moveDown()
         self.moveUp()
-        
+        self.boundRect.left=self.x
+        self.boundRect.top=self.y
         
         pass
     
