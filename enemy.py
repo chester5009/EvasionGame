@@ -4,10 +4,11 @@ class Enemy(MySprite):
     
     speed=0;
     acceleration=0.1
-    maxSpeed=0.7
+    maxSpeed=1.7
     isLife=True
-    
+    hp=1
     def update(self):
+        
         self.speed+=self.acceleration
         if(self.speed>self.maxSpeed): self.speed=self.maxSpeed
         self.x-=self.speed
